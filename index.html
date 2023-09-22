@@ -1,0 +1,229 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+      }
+    }
+
+    
+
+    .petalos1 {
+      border: 5px solid rgb(255, 166, 0);
+      border-bottom: none;
+      border-left: none;
+      width: 70px;
+      height: 100px;
+      border-radius: 100px;
+      border-top-right-radius: 100%;
+      border-top-left-radius: 40%;
+      border-bottom: none;
+      position: absolute;
+      left: 40%;
+      top: 41.5%;
+      background-color: yellow;
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+
+
+    .petalos {
+
+      border: 5px solid rgb(255, 166, 0);
+      border-left: none;
+      width: 60px;
+      height: 75px;
+      border-end-end-radius: 100%;
+      border-start-start-radius: 100%;
+      position: absolute;
+      left: 40.5%;
+      top: 42%;
+      background-color: rgb(255, 208, 0);
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+    .centro3 {
+      width: 40px;
+      height: 75px;
+      border-end-end-radius: 100%;
+      border-start-start-radius: 100%;
+      position: absolute;
+      left: 41.5%;
+      top: 43%;
+      background-color: rgb(255, 166, 0);
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+    .centro2 {
+      width: 60px;
+      height: 75px;
+      border-end-end-radius: 100%;
+      border-start-start-radius: 100%;
+      position: absolute;
+      left: 40.7%;
+      top: 43%;
+      background-color: rgb(143, 83, 5);
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+    .centro1 {
+      width: 20px;
+      height: 90px;
+      border-end-end-radius: 100%;
+      border-start-start-radius: 100%;
+      position: absolute;
+      left: 42.6%;
+      top: 42.6%;
+      background-color: rgb(71, 38, 0);
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+    .centro {
+      width: 10px;
+      height: 50px;
+      border-end-end-radius: 100%;
+      border-start-start-radius: 100%;
+      position: absolute;
+      left: 43%;
+      top: 43.7%;
+      background-color: rgb(34, 20, 0);
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+    .tallo {
+      position: absolute;
+      border-top-left-radius: 100%;
+      border-bottom-right-radius: 80%;
+      width: 50px;
+      height: 600px;
+      background: green;
+      left: 40%;
+      top: 50%;
+      margin-left: -10px;
+      opacity: 0;
+      animation: aparecer 4s forwards;
+    }
+
+    .hoja {
+      position: absolute;
+      width: 150px;
+      height: 200px;
+      background: greenyellow;
+      opacity: 0;
+      animation: aparecer 12s forwards;
+    }
+
+  .fondo {
+  background-image: url(dana.jpeg); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  flex: content;
+  }
+
+
+    .texto h1 {
+      margin-top: 50px;
+      text-align: center;
+      color: rgb(7, 7, 7);
+
+    }
+
+    .texto h2 {
+      margin-top: 50px;
+      text-align: center;
+      color: rgb(8, 8, 8);
+    }
+  </style>
+</head>
+
+<body class="fondo">
+
+  </div>
+  <div Class="tallo" id="tallo"></div>
+  <script>
+
+    for (let i = 0; i < 12; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("petalos1");
+      petal.style.transform = `rotate(${i * 30}deg) translate(0, -120px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <script>
+
+    for (let i = 0; i < 18; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("petalos");
+      petal.style.transform = `rotate(${i * 20}deg) translate(0, -100px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <script>
+
+    for (let i = 0; i < 30; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("centro3");
+      petal.style.transform = `rotate(${i * 12}deg) translate(0, -50px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <script>
+
+    for (let i = 0; i < 30; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("centro2");
+      petal.style.transform = `rotate(${i * 12}deg) translate(0, -25px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <script>
+
+    for (let i = 0; i < 30; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("centro1");
+      petal.style.transform = `rotate(${i * 12}deg) translate(0, -12.5px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+  <script>
+
+    for (let i = 0; i < 60; i++) {
+
+      let petal = document.createElement("div");
+      petal.classList.add("centro");
+      petal.style.transform = `rotate(${i * 6}deg) translate(0, -6.25px)`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+
+<div class="hoja" id="hoja" style="transform: rotate(90deg); left: 45%; top: 60%; border-end-start-radius:  100%; border-top-right-radius: 100%;"></div>
+
+<div class="texto">
+  <h1> Feliz dia de la amistad Danita, tqm <3  </h1>
+  
+</div>
+
+
+</body>
+
+</html>
